@@ -1,0 +1,24 @@
+{
+  "topic": "$297 beginner course on Claude Code",
+  "question": "Should I build a $297 course on Claude Code for beginners? My audience is mostly **non-technical solopreneurs**. Stakes: 4-8 weeks of build time and my reputation with a list of ~3,000.",
+  "mode": "Full Council (mixed models)",
+  "models": "Opus · Sonnet · Haiku · Fable",
+  "advisors": [
+    {"name": "The Contrarian", "model": "claude-opus-4-8", "response": "The market is *flooded* with Claude courses. At $297 you compete with free YouTube. Non-technical buyers mean high support load and refund risk.\n\n- Who actually pays $297 here?\n- What's your refund policy when they get stuck?"},
+    {"name": "The First Principles Thinker", "model": "claude-sonnet-4-6", "response": "What are you really trying to achieve? If revenue, a course is among the **slowest** paths. If authority, a free resource does more. If it's a funnel to higher-ticket work, this price/audience may be mismatched."},
+    {"name": "The Expansionist", "model": "claude-fable-5", "response": "Beginner Claude for solopreneurs is wildly underserved — everyone teaches advanced. Own the entry point and you own the funnel. $297 might be *low*; picture a $997 program with community."},
+    {"name": "The Outsider", "model": "claude-haiku-4-5-20251001", "response": "I don't know what Claude Code is. The title tells me nothing about what I could *do* afterward. Sell the outcome, not the tool."},
+    {"name": "The Executor", "model": "claude-sonnet-4-6", "response": "A real course is 4-8 weeks. First, run a live `$97 workshop` for 50 people. Validate demand, gather testimonials, generate the course's raw material. If 50 won't buy, 500 won't."}
+  ],
+  "peer_reviews": [
+    {"reviewer": "The Contrarian", "text": "Strongest: **Response D** (Outsider) — the naming problem is the real risk. Biggest blind spot: Response C ignores support cost entirely. All missed: no one asked about the existing list's buying history."},
+    {"reviewer": "The Executor", "text": "Strongest: Response E — it's the only one with a Monday-morning step. Blind spot: Response B is abstract. Missed: distribution — how does anyone find this?"}
+  ],
+  "verdict": {
+    "agrees": "The beginner-solopreneur angle has **real demand**, but framing it as a 'Claude Code course' is too tool-centric for non-technical buyers.",
+    "clashes": "Price. The Contrarian says $297 is too high vs. free alternatives; the Expansionist says it's too low for the value. Resolution hinges on how much support/community is bundled.",
+    "blind_spots": "The Outsider's point that 'Claude Code' means nothing to the buyer — every other advisor assumed familiarity. Also: no one checked the list's past purchase behavior.",
+    "recommendation": "Don't build the course yet. Validate with a lower-commitment offer first, and reframe entirely around the *outcome* (hours saved, tasks automated), not the tool.",
+    "first_step": "Run a $97 live workshop, *\"Automate your first business task with AI,\"* to 50 people from your list. Keep \"Claude Code\" out of the title."
+  }
+}
