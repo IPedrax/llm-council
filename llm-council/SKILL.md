@@ -193,7 +193,7 @@ The chairman produces the verdict in **exactly this structure**:
 
 ### Deliver it
 
-**Always show a concise version of the verdict directly in chat**, in this format, so the user gets the answer without leaving the conversation:
+**Always show a concise version of the verdict directly in chat**, in this format (with the section headers written in the council's language), so the user gets the answer without leaving the conversation:
 
 ```
 ## Council Verdict: {short topic}
@@ -221,7 +221,7 @@ The chairman produces the verdict in **exactly this structure**:
   ```
   python scripts/generate_report.py <session.json> <output.html>
   ```
-  The exact JSON schema is documented at the top of [scripts/generate_report.py](scripts/generate_report.py). Save the report next to the user's work (or in an `active/` dir if one exists) and tell them the path to open it.
+  The exact JSON schema is documented at the top of [scripts/generate_report.py](scripts/generate_report.py) — including an optional `lang` field: set it to the council's language (e.g. `pt`, `es`, `fr`) so the report's section titles render in that language; omit it and the generator auto-detects the language from the content. Save the report next to the user's work (or in an `active/` dir if one exists) and tell them the path to open it.
 - **If you cannot run Python (normal chat, mobile):** build the report as an **HTML artifact** following [assets/report-template.html](assets/report-template.html). On claude.ai this renders inline and works on a phone — which is the whole reason this path exists. Copy the template's structure and CSS; fill in the real content.
 
 > **PDF export.** The report is print-optimized — background colors are forced on for print and sections won't split awkwardly, so the user can just **Save as PDF** from any browser and it looks right. To produce a PDF file directly when a Chromium browser is available, render it headless: `chrome --headless=new --no-pdf-header-footer --print-to-pdf=report.pdf report.html` (add `--user-data-dir=<temp-dir>` if a browser is already running, or it will hand off and skip rendering).
